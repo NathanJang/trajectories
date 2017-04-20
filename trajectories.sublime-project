@@ -1,0 +1,19 @@
+{
+    "folders":
+    [
+        {
+            "path": "./app/",
+            "name": "App"
+        },
+        {
+            "path": "./",
+            "name": "Repo",
+            "folder_exclude_patterns": [
+                "app", // no need to include src again
+                "tmp", // compile-time
+                "dist", // builds
+                "node_modules", "bower_components" // dependencies
+            ]
+        }
+    ]
+}

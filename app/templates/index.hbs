@@ -1,0 +1,79 @@
+<h2>Launch Conditions</h2>
+<div class="row">
+  <div class="col-sm-6 two-rows">
+    <div class="form-group has-feedback">
+      <label for="initial-velocity">Initial Velocity</label>
+      {{input autocorrect="off" autocapitalize="none" value=initialVelocity id="initial-velocity" class="form-control"}}
+      {{#if (is-invalid-input initialVelocity)}}
+        <span class="glyphicon glyphicon-remove form-control-feedback text-danger" aria-hidden="true"></span>
+      {{/if}}
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="form-group has-feedback">
+      <label for="initial-velocity-x">Initial Velocity (x-component)</label>
+      {{input autocorrect="off" autocapitalize="none" value=initialVelocityX id="initial-velocity-x" class="form-control"}}
+      {{#if (is-invalid-input initialVelocityX)}}
+        <span class="glyphicon glyphicon-remove form-control-feedback text-danger" aria-hidden="true"></span>
+      {{/if}}
+    </div>
+    <div class="form-group has-feedback">
+      <label for="initial-velocity-y">Initial Velocity (y-component)</label>
+      {{input autocorrect="off" autocapitalize="none" value=initialVelocityY id="initial-velocity-y" class="form-control"}}
+      {{#if (is-invalid-input initialVelocityY)}}
+        <span class="glyphicon glyphicon-remove form-control-feedback text-danger" aria-hidden="true"></span>
+      {{/if}}
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="form-group has-feedback">
+      <label for="angle-degrees">Angle (degrees)</label>
+      {{input autocorrect="off" autocapitalize="none" value=angleDegrees id="angle-degrees" class="form-control"}}
+      {{#if (is-invalid-input angleDegrees)}}
+        <span class="glyphicon glyphicon-remove form-control-feedback text-danger" aria-hidden="true"></span>
+      {{/if}}
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="form-group has-feedback">
+      <label for="angle-radians">Angle (radians)</label>
+      {{input autocorrect="off" autocapitalize="none" value=angleRadians id="angle-radians" class="form-control"}}
+      {{#if (is-invalid-input angleRadians)}}
+        <span class="glyphicon glyphicon-remove form-control-feedback text-danger" aria-hidden="true"></span>
+      {{/if}}
+    </div>
+  </div>
+</div>
+
+<div class="form-group has-feedback">
+  <label for="launch-height">Launch Height</label>
+  {{input autocorrect="off" autocapitalize="none" value=launchHeight id="launch-height" class="form-control"}}
+  {{#if (is-invalid-input launchHeight)}}
+    <span class="glyphicon glyphicon-remove form-control-feedback text-danger" aria-hidden="true"></span>
+  {{/if}}
+</div>
+
+<div class="form-group has-feedback">
+  <label for="peak-height">Peak Height</label>
+  {{input autocorrect="off" autocapitalize="none" value=peakHeight id="peak-height" class="form-control" readonly="true"}}
+  {{#if (is-invalid-input peakHeight)}}
+    <span class="glyphicon glyphicon-remove form-control-feedback text-danger" aria-hidden="true"></span>
+  {{/if}}
+</div>
+
+<div class="form-group has-feedback">
+  <label for="range">Horizontal Range</label>
+  {{input autocorrect="off" autocapitalize="none" value=range id="range" class="form-control" readonly="true"}}
+  {{#if (is-invalid-input range)}}
+    <span class="glyphicon glyphicon-remove form-control-feedback text-danger" aria-hidden="true"></span>
+  {{/if}}
+</div>
+<div class="form-group has-feedback">
+  <label for="time-of-flight">Time of Flight</label>
+  {{input autocorrect="off" autocapitalize="none" value=timeOfFlight id="time-of-flight" class="form-control" readonly="true"}}
+  {{#if (is-invalid-input timeOfFlight)}}
+    <span class="glyphicon glyphicon-remove form-control-feedback text-danger" aria-hidden="true"></span>
+  {{/if}}
+</div>
